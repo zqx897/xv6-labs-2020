@@ -4,6 +4,16 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
+// struct stat {
+//   int dev;     // File system's disk device
+//   uint ino;    // Inode number
+//   short type;  // Type of file
+//   short nlink; // Number of links to file
+//   uint64 size; // Size of file in bytes
+// };
+
+
+
 void find(char *path, const char *filename)
 {
   char buf[512], *p;
